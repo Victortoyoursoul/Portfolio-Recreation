@@ -11,13 +11,6 @@ body{
     font-family: sans-serif;
 }
 
-.container{
-    
-    ackground-color: #d9ff40;
-    eight: 100%;
-    argin: 0;
-    
-}
 .top-header{
     display: flex;
     justify-content: space-between;
