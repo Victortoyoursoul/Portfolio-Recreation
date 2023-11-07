@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: hsl(108, 32%, 30%);
+    height: 100%;
+    margin: 0;
+    color: rgb(255, 255, 255);}
+
+.bgimage{
+    background-image: url(images/bg\ portfolio.jpeg);
+    background-size: cover;
+
+}
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        width:100vp ;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .logo{
+        margin: 0;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: cursive;
+    }
+    .logo:hover{
+        color: hsl(108, 32%, 30%);
+    }
+    .navigation-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap:15px;
+    }
+    .menu-item{
+        color: #ffffff;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-item a{
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+    }
+    .menu-item a:hover{
+        color: hsl(108, 32%, 30%);
+    }
+    .menu-item a::after{
+        content:" ";
+        background-color:hsl(108, 32%, 30%) ;
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    
+    }
+    .menu-item a:hover::after{
+        width: 100%;
+    }
+/* CONTACT ME */
+
+    .contacthead{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .formcontainer{
+        justify-content: end;
+        margin-left: 50%;
+    }
+    .formcontainer li{
+       list-style: none;
+       padding-bottom: 10px;
+    }
+    .formcontainer li #name{
+        width: 500px;
+        height: 45px;
+        font: 20px sans-serif;
+        border-radius: 7px;
+        border: 2px;
+    }
+    .formcontainer li #name::placeholder{
+        padding-left:10px ;
+    }
+    .the-rest{
+        width: 500px;
+        height: 42px;
+        font: 20px sans-serif;
+        border: 2px;
+        border-radius: 7px;
+    }
+    .the-rest::placeholder{
+        padding-left: 10px;
+    }
+    #pdetails{
+        width: 500px ;
+        height: 150px;
+        font: 15px sans-serif;
+        border: 2px;
+        border-radius: 7px;
+    }
+    #pdetails::placeholder{
+        padding-left: 10px;
+    }
+    .formbutton{
+        background-color: rgb(98, 224, 13);
+        color: #ffffff;
+        cursor: pointer;
+    }
